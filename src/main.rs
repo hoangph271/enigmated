@@ -11,9 +11,9 @@ async fn hello() -> Result<NamedFile> {
     Ok(index_html()?)
 }
 
-#[get("/play")]
+#[get("/space")]
 async fn echo() -> Result<NamedFile> {
-    Enigo::new().key_click(Key::CapsLock);
+    Enigo::new().key_click(Key::Space);
 
     Ok(index_html()?)
 }
